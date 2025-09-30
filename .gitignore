@@ -205,3 +205,38 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+*.whl
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+*.conda
+*.yaml
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data (ignore large raw/processed datasets)
+data/
+*.csv
+*.xlsx
+*.h5
+*.parquet
+
+# Results (ignore heavy outputs/logs)
+results/
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
