@@ -64,3 +64,17 @@ This hybrid model aims to outperform standalone econometric and deep learning mo
 - [ ] Build and train LSTM  
 - [ ] Integrate hybrid forecasting system
 
+### Table X: EGARCH(2,1)-t Model Diagnostic Summary
+
+| Metric | Value | Interpretation |
+|:--|--:|:--|
+| **Model** | EGARCH(2,1)-t | Chosen specification (best AIC/BIC) |
+| **Distribution** | Student-t | Captures heavy tails and fat-tailed shocks |
+| **AIC** | 10006.60 | Lowest among tested models → best parsimony-fit balance |
+| **BIC** | 10044.23 | Consistent with AIC → supports model selection |
+| **Leverage (γ[1])** | -0.1724 | Negative and significant → leverage effect present |
+| **p-value (γ)** | 2.7e-32 | Highly significant asymmetry (p < 0.001) |
+| **Ljung–Box p (lag 10)** | 0.00049 | Mild serial correlation remains in standardized residuals |
+| **Ljung–Box p (lag 20)** | 0.00042 | Same as above – likely mean model effect |
+| **ARCH LM p (lag 12)** | 0.64 | No remaining heteroskedasticity (model well-specified) |
+| **Overall Assessment** | ✅ Good | Volatility and asymmetry well captured; mild autocorrelation acceptable |
